@@ -7,6 +7,12 @@ Contoh,jika kata adalah "John Doe", function akan me-return "eoD nhoJ".
 
 function balikKata(kata) {
   // you can only write your code here!
+  let word = "";
+  panjangKata = kata.length;
+  for (let i = panjangKata - 1; i >= 0; i--){
+    word += kata[i];
+  }
+  return word;
 }
 
 // TEST CASES

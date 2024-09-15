@@ -9,6 +9,16 @@ Contoh, 'katak' dibalik tetaplah 'katak'.
 
 function palindrome(kata) {
   // you can only write your code here!
+  let word = "";
+  panjangKata = kata.length;
+  for (let i = panjangKata - 1; i >= 0; i--){
+    word += kata[i];
+  }
+  if (word === kata){
+    return true;
+  }else {
+    return false;
+  }
 }
 
 // TEST CASES
